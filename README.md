@@ -28,7 +28,9 @@ Some prompts to answer:
 - How do you choose which songs to recommend
 
 You can include a simple diagram or bullet list if helpful.
+My system uses content-based filtering, as it uses the song's genre, mood, tempo, and similar attributes. If I were to use the other option it wouldn't be possible, as it would need other people's choices and likes. Moreover, if a new song with zero likes and zero streams came out, it would never be recommended to anyone if it were collaborative-based. Content-based can recommend anything immediately, but it tends to keep showing users more of what they already like.
 
+My scoring recipe weights genre matches at +2.0, mood matches at +1.0, and energy closeness up to +2.0. Because genre and energy are weighted highest, this system might over-prioritize genre and energy matches, potentially overlooking songs that only align on mood.
 ---
 
 ## Getting Started
